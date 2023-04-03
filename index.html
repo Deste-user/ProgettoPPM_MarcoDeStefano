@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ProgettoLaboratorio</title>
+    <script src="Js/jquery-3.6.4.js"></script>
+    <script src="Js/index.js"></script>
+</head>
+<body>
+<div class="MainWrapper">
+    <header class="HeaderWrapper">
+        <div class="LogoHeader">
+            <div class="LogoFirstRow">
+                <div style="background-color: red;width:60%;height: 100%;color:white;display: flex;justify-content: center;align-content: center; align-items: center;">
+                <span style="font-size: 2.5em">stol</span>
+                </div>
+                <div style="background-color: grey;width:40%;height:100%;color:black;display: flex;justify-content: center;align-content: center; align-items: center;">
+                    <span style="font-size: 2.5em">.it</span>
+                </div>
+            </div>
+            <div class="LogoSecondRow">
+                <span style="font-size: 0.5em">&nbsp;NACHRICHTEN F&uuml;R S&uuml;DTIROL&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="ColHeader">
+            <div class="FirstRowHeader">
+                <div class="InputSearchFiles">
+                    <img src="img/SearchIcon.png" height="24">
+                    <input type="text" placeholder="Suche..." class="SearchInput">
+                </div>
+                <div class="Description">
+                    <span>Dolomiten</span>
+                    <span>&nbsp;|&nbsp;</span>
+                    <span>Newsticker</span>
+                </div>
+                <div class="IconPlus">
+                    <img src="img/sun.svg" height="24">
+                    <span>&nbsp;|&nbsp;</span>
+                    <img src="img/User.png" height="24">
+                    <span>&nbsp;|&nbsp;</span>
+                    <div class="FakeLogo"><span>S</span></span></div>
+                </div>
+            </div>
+            <div class="SecondRowHeader">
+                <span>
+                    Bezirke
+                </span>
+                <span>
+                    Chronik
+                </span>
+                <span>
+                    Polinik
+                </span>
+                <span>
+                    Wirtschaft
+                </span>
+                <span>
+                    Sport
+                </span>
+                <span>
+                    Kultur
+                </span>
+                <span>
+                    Videos
+                </span>
+                <span>
+                    Mehr
+                </span>
+            </div>
+        </div>
+    </header>
+    <div class="MainContainer">
+        <div class="RowImage">
+            <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); flex-grow: 1;">
+                <!-- Si usa il flex-grow per adattare l'immagine al cento% del rimanente spazio visto che le immagini di destra hanno una larghezza fissata da quelle sotto-->
+                <span></span>
+                <!--<span>TEST</span>-->
+                <div class="OverTitle">
+                    <div class="GenreContainer">
+                        <div class="Genre">
+                            <span>GENERE</span>
+                        </div>
+                    </div>
+                    <div class="TitleContainer">
+                        <div class="Title">
+                            <span>TITOLO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ImageContainer FirstRowImage">
+                <div id="ImgCamp" class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-top: 0;">
+                    <span></span>
+                    <!--<span>TEST</span>-->
+                    <div class="OverTitle">
+                        <div class="GenreContainer">
+                            <div class="Genre">
+                                <span>GENERE</span>
+                            </div>
+                        </div>
+                        <div class="TitleContainer">
+                            <div class="Title">
+                                <span>TITOLO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-bottom: 0;">
+                    <span></span>
+                    <!--<span>TEST</span>-->
+                    <div class="OverTitle">
+                        <div class="GenreContainer">
+                            <div class="Genre">
+                                <span>GENERE</span>
+                            </div>
+                        </div>
+                        <div class="TitleContainer">
+                            <div class="Title">
+                                <span>TITOLO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="RowImage">
+            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                <div class="IconContainerImg" >
+                    <div class="FakeLogo" >
+                        <span>S</span>
+                    </div>
+                    <img src="img/Stato.png" height="30">
+                </div>
+
+                <div class="OverTitle">
+                    <div class="GenreContainer">
+                        <div class="Genre">
+                            <span>GENERE</span>
+                        </div>
+                    </div>
+                    <div class="TitleContainer">
+                        <div class="Title">
+                            <span>TITOLO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                <div class="IconContainerImg" >
+                    <div class="WhiteBox" >
+                        <span>UMFRAGE</span>
+                    </div>
+                    <img src="img/Stato.png" height="30">
+                </div>
+
+                <div class="OverTitle">
+                    <div class="GenreContainer">
+                        <div class="Genre">
+                            <span>GENERE</span>
+                        </div>
+                    </div>
+                    <div class="TitleContainer">
+                        <div class="Title">
+                            <span>TITOLO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                <div class="IconContainerImg" >
+                    <img src="img/play.png" height="24">
+                </div>
+
+                <div class="OverTitle">
+                    <div class="GenreContainer">
+                        <div class="Genre">
+                            <span>GENERE</span>
+                        </div>
+                    </div>
+                    <div class="TitleContainer">
+                        <div class="Title">
+                            <span>TITOLO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="RowImage" style="justify-content: center;">
+            <div class="ADV"></div>
+        </div>
+        <div class="RowImage">
+            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                <div class="IconContainerImg" >
+                    <div class="WhiteBox" >
+                        <span>UMFRAGE</span>
+                    </div>
+                    <img src="img/Stato.png" height="30">
+                </div>
+
+                <div class="OverTitle">
+                    <div class="GenreContainer">
+                        <div class="Genre">
+                            <span>GENERE</span>
+                        </div>
+                    </div>
+                    <div class="TitleContainer">
+                        <div class="Title">
+                            <span>TITOLO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                <div class="IconContainerImg" >
+                    <div class="WhiteBox" >
+                        <span>UMFRAGE</span>
+                    </div>
+                    <img src="img/Stato.png" height="30">
+                </div>
+
+                <div class="OverTitle">
+                    <div class="GenreContainer">
+                        <div class="Genre">
+                            <span>GENERE</span>
+                        </div>
+                    </div>
+                    <div class="TitleContainer">
+                        <div class="Title">
+                            <span>TITOLO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                <div class="IconContainerImg" >
+                    <div class="WhiteBox" >
+                        <span>UMFRAGE</span>
+                    </div>
+                    <img src="img/Stato.png" height="30">
+                </div>
+
+                <div class="OverTitle">
+                    <div class="GenreContainer">
+                        <div class="Genre">
+                            <span>GENERE</span>
+                        </div>
+                    </div>
+                    <div class="TitleContainer">
+                        <div class="Title">
+                            <span>TITOLO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+body{
+    background:rgba(0,0,0,0.1);
+    color:#000;
+    font-family: "Splus Icon", "Fira Sans", sans-serif;
+}
+
+.MainWrapper{
+    background-color: rgb(255,255,255);
+    box-shadow: rgba(0,0,0,0.15) 0px 3px 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /*between tutto sparato alto o basso altrimenti attenuato*/
+    align-items: center;
+}
+
+.LogoHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.LogoFirstRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+
+}
+
+.LogoSecondRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2px 0px;
+    background-color: black;
+    color: white;
+}
+
+.ColHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 80px;   /*se metto pixel è statico con % è dinamico*/
+    /*background-color: red;*/
+}
+
+.FirstRowHeader{
+   display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /*background-color: yellow;*/
+}
+
+.SecondRowHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    /*background-color: green;*/
+}
+
+
+.InputSearchFiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-bottom: 2px solid grey;
+}
+
+.SearchInput{
+    border: none;
+    outline: none;
+}
+
+.HeaderWrapper{
+    box-shadow: rgba(0,0,0,0.15) 0px 3px 6px;
+    background-color: rgb(255,255,255);
+    padding: 20px 0px;
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.Description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #666565;
+    /*background-color: rgb(0,255,255);*/
+
+}
+
+.IconPlus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    /*background-color: rgb(255,0,255);*/
+
+}
+
+.FakeLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+}
+
+.SecondRowHeader span{
+    margin: 0 10px;
+}
+
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    padding: 20px 0;
+    /*background-color: rgb(255,0,0);*/
+}
+
+.RowImage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  /*  background-color: yellow;*/
+}
+.ImageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 373px;
+    color: white;
+    margin: 3px;
+    /* border-bottom: 2px solid transparent; */
+}
+.ImageContainer:hover{
+    transition: 0.5s;
+    border-bottom: 2px solid red;
+}
+.OverTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.GenreContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.Genre{
+    padding: 10px 20px;
+    color: rgb(255,255,255);
+    background-color: rgba(255, 0, 0, 0.78);
+}
+
+.TitleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.Title{
+    color: rgb(255,255,255);
+    padding: 10px 20px;
+}
+
+.IconContainerImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    width: 95%;
+}
+.WhiteBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    padding: 0 4px;
+    background-color: white;
+    border-radius: 4px;
+    color: red;
+    font-weight: bold;
+}
+
+.ADV{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 80%;
+    background-image: url("https://via.placeholder.com/1000x1000/1ce62d/969696?text=LoremIpsumADV");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
