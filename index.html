@@ -9,11 +9,14 @@
     <script src="Js/index.js"></script>
 </head>
 <body>
-<div class="MainWrapper">
-    <header class="HeaderWrapper">
-        <div class="LogoHeader">
+
+<button id="Buttontop" onclick="topFunction()" ><div style="width:43px; height: 48px; background-image:url('/img/download.png'); background-size:cover; background-repeat: no-repeat; background-position: center;"></div></button>
+
+<div class="MainWrapper" style="width:80%;">
+    <header class="HeaderWrapper" id="nav">
+        <div class="LogoHeader" id="logo">
             <div class="LogoFirstRow">
-                <div style="background-color: red;width:60%;height: 100%;color:white;display: flex;justify-content: center;align-content: center; align-items: center;">
+                <div style="background-color: red;width:60%;color:white;display: flex;justify-content: center;align-content: center; align-items: center;">
                 <span style="font-size: 2.5em">stol</span>
                 </div>
                 <div style="background-color: grey;width:40%;height:100%;color:black;display: flex;justify-content: center;align-content: center; align-items: center;">
@@ -25,13 +28,13 @@
             </div>
         </div>
 
-        <div class="ColHeader">
-            <div class="FirstRowHeader">
-                <div class="InputSearchFiles">
+        <div class="ColHeader" id="RowToCenter">
+            <div class="FirstRowHeader" id="frh" >
+                <div class="InputSearchFiles" id="todis1">
                     <img src="img/SearchIcon.png" height="24">
                     <input type="text" placeholder="Suche..." class="SearchInput">
                 </div>
-                <div class="Description">
+                <div class="Description" id="todis2">
                     <span>Dolomiten</span>
                     <span>&nbsp;|&nbsp;</span>
                     <span>Newsticker</span>
@@ -41,7 +44,7 @@
                     <span>&nbsp;|&nbsp;</span>
                     <img src="img/User.png" height="24">
                     <span>&nbsp;|&nbsp;</span>
-                    <div class="FakeLogo"><span>S</span></span></div>
+                    <div class="FakeLogo"><span>S</span></div>
                 </div>
             </div>
             <div class="SecondRowHeader">
@@ -72,6 +75,7 @@
             </div>
         </div>
     </header>
+
     <div class="MainContainer">
         <div class="RowImage">
             <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); flex-grow: 1;">
@@ -191,73 +195,72 @@
         <div class="RowImage" style="justify-content: center;">
             <div class="ADV"></div>
         </div>
-        <div class="RowImage">
-            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
-                <div class="IconContainerImg" >
-                    <div class="WhiteBox" >
-                        <span>UMFRAGE</span>
-                    </div>
-                    <img src="img/Stato.png" height="30">
-                </div>
+        <div class="ListArticle">
 
-                <div class="OverTitle">
-                    <div class="GenreContainer">
-                        <div class="Genre">
-                            <span>GENERE</span>
-                        </div>
-                    </div>
-                    <div class="TitleContainer">
-                        <div class="Title">
-                            <span>TITOLO</span>
-                        </div>
-                    </div>
+            <div class="ArticleOfList">
+            <div class=" ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+               <div>
+                   <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+               </div>
+
+               <div class="TitleArticle">
+                     <div class="FakeLogo"><span>S</span></div>
+                     <span>&nbsp;Titolo Articolo</span>
+               </div>
+                <div class="MiniArticle">
+                    <p>
+                        Eine angebliche Gerichtsvorladung oder ein angeblicher Strafbescheid: Dahinter kann auch krimineller Passwort-Klau stecken. Solche Fälle häufen sich derzeit
+                    </p>
                 </div>
             </div>
-            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
-                <div class="IconContainerImg" >
-                    <div class="WhiteBox" >
-                        <span>UMFRAGE</span>
-                    </div>
-                    <img src="img/Stato.png" height="30">
+
+            <div class="ArticleOfList" style="border-right: 1px solid grey; border-left: 1px solid grey ">
+                <div class=" ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                <div>
+                    <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                </div>
+                <div class="TitleArticle">
+                    <div class="FakeLogo"><span>S</span></div>
+                    <span>&nbsp;Titolo Articolo</span>
                 </div>
 
-                <div class="OverTitle">
-                    <div class="GenreContainer">
-                        <div class="Genre">
-                            <span>GENERE</span>
-                        </div>
-                    </div>
-                    <div class="TitleContainer">
-                        <div class="Title">
-                            <span>TITOLO</span>
-                        </div>
-                    </div>
+                <div class="MiniArticle">
+                    <p>
+                        Eine angebliche Gerichtsvorladung oder ein angeblicher Strafbescheid: Dahinter kann auch krimineller Passwort-Klau stecken. Solche Fälle häufen sich derzeit
+                    </p>
                 </div>
             </div>
-            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
-                <div class="IconContainerImg" >
-                    <div class="WhiteBox" >
-                        <span>UMFRAGE</span>
-                    </div>
-                    <img src="img/Stato.png" height="30">
-                </div>
 
-                <div class="OverTitle">
-                    <div class="GenreContainer">
-                        <div class="Genre">
-                            <span>GENERE</span>
-                        </div>
-                    </div>
-                    <div class="TitleContainer">
-                        <div class="Title">
-                            <span>TITOLO</span>
-                        </div>
-                    </div>
+            <div class="ArticleOfList">
+                <div class=" ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                   <div >
+                        <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                   </div>
+                <div class="TitleArticle">
+                    <div class="FakeLogo"><span>S</span></div>
+                    <span>&nbsp;Titolo Articolo</span>
+                </div>
+                <div class="MiniArticle">
+                     <p>
+                        Eine angebliche Gerichtsvorladung oder ein angeblicher Strafbescheid: Dahinter kann auch krimineller Passwort-Klau stecken. Solche Fälle häufen sich derzeit
+                     </p>
                 </div>
             </div>
         </div>
+
+
+    </div>
+
+
+</div>
+<div style="width: 20%;">
+    <div style=" width: 19%; height: 70%;background-color: black ;position: fixed; top:0 ;">
+        <span style="position: center;color:white;">ADV</span>
+
     </div>
 </div>
+
+
 
 </body>
 </html>
