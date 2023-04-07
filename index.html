@@ -9,18 +9,22 @@
     <script src="Js/index.js"></script>
 </head>
 <body>
+<!--<div style="width: 100%; background-color: red "></div>-->
 
 <button id="Buttontop" onclick="topFunction()" ><div style="width:43px; height: 48px; background-image:url('/img/download.png'); background-size:cover; background-repeat: no-repeat; background-position: center;"></div></button>
 
-<div class="MainWrapper" style="width:80%;">
+<div style="flex-direction: column; display: flex; justify-content: space-between">
+    <div style= "width:70% ;height:150px ;margin-left: 50px ;display: flex; background-color: black"></div>
+<div style="flex-direction: row; display: flex;">
+<div class="MainWrapper" style="width:100%;">
     <header class="HeaderWrapper" id="nav">
         <div class="LogoHeader" id="logo">
             <div class="LogoFirstRow">
-                <div style="background-color: red;width:60%;color:white;display: flex;justify-content: center;align-content: center; align-items: center;">
-                <span style="font-size: 2.5em">stol</span>
+                <div style="background-color: rgb(212, 29, 36);width:60%;color:white;display: flex;justify-content: center;align-content: center; align-items: center;">
+                <span>stol</span>
                 </div>
-                <div style="background-color: grey;width:40%;height:100%;color:black;display: flex;justify-content: center;align-content: center; align-items: center;">
-                    <span style="font-size: 2.5em">.it</span>
+                <div style="background-color: rgb(226, 226, 226);width:40%;height:100%;color:black;display: flex;justify-content: center;align-content: center; align-items: center;">
+                    <span >.it</span>
                 </div>
             </div>
             <div class="LogoSecondRow">
@@ -48,9 +52,11 @@
                 </div>
             </div>
             <div class="SecondRowHeader">
-                <span>
-                    Bezirke
-                </span>
+                <div style="flex-direction: row;display: flex; ">
+                    <span>Bezirke</span>
+                    <img src='/img/icons8-ordine-decrescente-30.png' height="10" width="10" style="padding-top:2px; ">
+                </div>
+
                 <span>
                     Chronik
                 </span>
@@ -69,9 +75,12 @@
                 <span>
                     Videos
                 </span>
+                <div style="flex-direction: row-reverse;display: flex;">
+                    <img src='/img/icons8-ordine-decrescente-30.png' height="10" width="10" style="padding-top:2px; ">
                 <span>
                     Mehr
                 </span>
+                </div>
             </div>
         </div>
     </header>
@@ -199,9 +208,10 @@
 
             <div class="ArticleOfList">
             <div class=" ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
-               <div>
+                <div>
                    <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
                </div>
+
 
                <div class="TitleArticle">
                      <div class="FakeLogo"><span>S</span></div>
@@ -247,19 +257,65 @@
                 </div>
             </div>
         </div>
+        <div style="width: 100%">&nbsp;</div>
 
+       <div class="RowArticle">
+       <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/600x400/c2c2c2/949494?text=LoremIpsum');width: 60%;"></div>
+         <div class="ArticleInRow">
+           <div class="TitleArticle" style="flex-direction: column">
+               <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span></div>
+               <span>&nbsp;Titolo Articolo</span>
+           </div>
+               <div>
+                   <p>Im STOL-Tagesrückblick bieten wir Ihnen einen kurzen, kompakten Überblick über einige Meldungen des Tages.</p>
+               </div>
+         </div>
+       </div>
+       <div class =" LineDivision "> &nbsp;</div><div>&nbsp; </div>
+        <div style="flex-direction: row; justify-content: start; width: 100%;">
+         <div style="flex-direction: column;display: flex; width: 70%;">
+            <div class="ListArticle" >
+                <div class="ImageContainer SecondRowImage" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
 
+                <div class="ArticleInRow">
+                    <div class="TitleArticle" style="flex-direction: column; ">
+                        <div style="justify-content: start"><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                        <span>&nbsp;Titolo Articolo</span>
+                    </div>
+                    <div>
+                        <p>Im STOL-Tagesrückblick bieten wir Ihnen einen kurzen, kompakten Überblick über einige Meldungen des Tages.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
+            <div class="ListArticle" >
+                <div class="ImageContainer SecondRowImage" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
+
+                <div class="ArticleInRow">
+                    <div class="TitleArticle" style="flex-direction: column">
+                        <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                        <span>&nbsp;Titolo Articolo</span>
+                    </div>
+                    <div>
+                        <p>Im STOL-Tagesrückblick bieten wir Ihnen einen kurzen, kompakten Überblick über einige Meldungen des Tages.</p>
+                    </div>
+                </div>
+            </div>
+             <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
+        </div>
+        <div style="justify-content: start;width: 30%; height: 60%; background-color: black"></div>
+
+        </div>
     </div>
-
-
 </div>
-<div style="width: 20%;">
-    <div style=" width: 19%; height: 70%;background-color: black ;position: fixed; top:0 ;">
+
+    <div style="width: 30%;">
+    <div id="banneradv" style=" width: 90%; height: 29%;background-color: black ;position: sticky;top:0;">
         <span style="position: center;color:white;">ADV</span>
-
+    </div>
     </div>
 </div>
-
+</div>
 
 
 </body>
