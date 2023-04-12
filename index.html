@@ -9,14 +9,13 @@
     <script src="Js/index.js"></script>
 </head>
 <body>
-<!--<div style="width: 100%; background-color: red "></div>-->
 
-<button id="Buttontop" onclick="topFunction()" ><div style="width:43px; height: 48px; background-image:url('/img/download.png'); background-size:cover; background-repeat: no-repeat; background-position: center;"></div></button>
+<button id="Buttontop" onclick="topFunction()" ><div style="width:43px; height: 50px; background-image:url('/img/download.png'); background-size:cover; background-repeat: no-repeat; background-position: center;"></div></button>
 
-<div style="flex-direction: column; display: flex; justify-content: space-between">
-    <div style= "width:70% ;height:150px ;margin-left: 50px ;display: flex; background-color: black"></div>
+<div class="Container">
+    <div class="ADV1"><span>ADV1</span></div>
 <div style="flex-direction: row; display: flex;">
-<div class="MainWrapper" style="width:100%;">
+<div class="MainWrapper" style="width:80%;">
     <header class="HeaderWrapper" id="nav">
         <div class="LogoHeader" id="logo">
             <div class="LogoFirstRow">
@@ -86,8 +85,11 @@
     </header>
 
     <div class="MainContainer">
-        <div class="RowImage">
-            <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); flex-grow: 1;">
+        <div class="RowImage" style="justify-content: center;align-items: center; ">
+        <div class="ADV4"><span>ADV1</span></div>
+        </div>
+        <div class="RowImage" >
+            <div id="BigImage" class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); flex-grow: 1;">
                 <!-- Si usa il flex-grow per adattare l'immagine al cento% del rimanente spazio visto che le immagini di destra hanno una larghezza fissata da quelle sotto-->
                 <span></span>
                 <!--<span>TEST</span>-->
@@ -104,8 +106,8 @@
                     </div>
                 </div>
             </div>
-            <div class="ImageContainer FirstRowImage">
-                <div id="ImgCamp" class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-top: 0;">
+            <div class="AAA FirstRowImage">
+                <div id="ImgCamp" class="ImageContainer colimage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-top: 0;">
                     <span></span>
                     <!--<span>TEST</span>-->
                     <div class="OverTitle">
@@ -121,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-bottom: 0;">
+                <div class="ImageContainer colimage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-bottom: 0;">
                     <span></span>
                     <!--<span>TEST</span>-->
                     <div class="OverTitle">
@@ -201,7 +203,7 @@
                 </div>
             </div>
         </div>
-        <div class="RowImage" style="justify-content: center;">
+        <div class="RowImage1">
             <div class="ADV"></div>
         </div>
         <div class="ListArticle">
@@ -211,11 +213,10 @@
                 <div>
                    <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
                </div>
+               <div class="TitleArticle" >
+                   <div class="FakeLogo"><span>S</span></div>
+                   <span >&nbsp; Titolo Articolo</span>
 
-
-               <div class="TitleArticle">
-                     <div class="FakeLogo"><span>S</span></div>
-                     <span>&nbsp;Titolo Articolo</span>
                </div>
                 <div class="MiniArticle">
                     <p>
@@ -262,7 +263,7 @@
        <div class="RowArticle">
        <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/600x400/c2c2c2/949494?text=LoremIpsum');width: 60%;"></div>
          <div class="ArticleInRow">
-           <div class="TitleArticle" style="flex-direction: column">
+           <div class="TitleArticle" style="flex-direction: column;">
                <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span></div>
                <span>&nbsp;Titolo Articolo</span>
            </div>
@@ -272,7 +273,7 @@
          </div>
        </div>
        <div class =" LineDivision "> &nbsp;</div><div>&nbsp; </div>
-        <div style="flex-direction: row; justify-content: start; width: 100%;">
+        <div id="mediachange" style="flex-direction: row; justify-content: start; width: 100%; display: flex;">
          <div style="flex-direction: column;display: flex; width: 70%;">
             <div class="ListArticle" >
                 <div class="ImageContainer SecondRowImage" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
@@ -288,9 +289,9 @@
                 </div>
             </div>
              <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
+
             <div class="ListArticle" >
                 <div class="ImageContainer SecondRowImage" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
-
                 <div class="ArticleInRow">
                     <div class="TitleArticle" style="flex-direction: column">
                         <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
@@ -303,20 +304,59 @@
             </div>
              <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
         </div>
-        <div style="justify-content: start;width: 30%; height: 60%; background-color: black"></div>
+        <div class="ADV3" > <span>ADV3</span></div>
 
         </div>
     </div>
 </div>
 
-    <div style="width: 30%;">
-    <div id="banneradv" style=" width: 90%; height: 29%;background-color: black ;position: sticky;top:0;">
-        <span style="position: center;color:white;">ADV</span>
+    <div class="ADV2Container" >
+    <div class="ADV2">
+        <span style="color:white;">ADV2</span>
     </div>
     </div>
 </div>
-</div>
+    <div class="Footer">
+        <div class="Linkfooter" >
+            <span> Werben auf STOL </span>
+            <img src="/img/icons8-link-esterno.svg" height="20" >
 
+        </div>
+        <div class="Linkfooter" >
+            <span>&nbsp; Lessereporterwerden </span>
+            <img src="/img/icons8-link-esterno.svg" height="20" >
+
+        </div>
+        <div class="Linkfooter">
+            <span>&nbsp; Tourentipps  </span>
+            <img src="/img/icons8-link-esterno.svg" height="20" >
+        </div>
+        <div class="Linkfooter" >
+            <span>&nbsp; Telmi Telefonbuch   </span>
+            <img src="/img/icons8-link-esterno.svg" height="20" >
+        </div>
+        <div class="Linkfooter" >
+            <span>&nbsp; Cippy </span>
+            <img src="/img/icons8-link-esterno.svg" height="20" >
+        </div>
+    </div>
+    <div class="WebLinks">
+        <div class="WebLinksContainer"><img src="img/Screenshot%202023-04-12%20alle%2016.18.57.png" height="90" ></div>
+        <div class="WebLinksContainer"><img src="img/google-play-badge-logo-svgrepo-com.svg " height="200"></div>
+        <div class="WebLinksContainer"><img src="img/download-on-the-app-store-apple-logo-svgrepo-com.svg" height="200"></div>
+    </div>
+    <div style="flex-direction: row; text-align: center">
+    <span class="evid">Impressum</span> <span>|</span>
+    <span class="evid">AGB</span> <span>|</span>
+    <span class="evid">Privacy Policy</span> <span>|</span>
+    <span class="evid"> Cookie Policy</span> <span>|</span>
+    <span class="evid"> Privacy Einstellungen</span> <span>|</span>
+    <span class="evid">FAQ</span> <span>|</span>
+    <span class="evid">Push-Nachrichten</span>
+    </div >
+    <div style="text-align: center; margin-top: 20px;">
+      <span style="color:grey;">© 2023</span><span class="evid">&nbsp; First Avenue GmbH</span>
+</div>
 
 </body>
 </html>
