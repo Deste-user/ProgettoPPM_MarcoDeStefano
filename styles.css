@@ -2,6 +2,7 @@ body{
     background:rgba(0,0,0,0.1);
     color:#000;
     font-family: "Splus Icon", "Fira Sans", sans-serif;
+    cursor: default;
     display: flex;
     margin: 0;
     padding: 0;
@@ -26,6 +27,7 @@ body{
 
 .LogoHeader{
     display: flex;
+    margin:0px 30px;
     flex-direction: column;
     line-height: 2;
     justify-content: center;
@@ -102,7 +104,8 @@ body{
 .HeaderWrapper{
     box-shadow: rgba(0,0,0,0.15) 0px 3px 6px;
     background-color: rgb(255,255,255);
-    padding: 20px 40px;
+    padding: 20px 0px;
+
     display: flex;
     transition: 0.3s;
     z-index: 99;
@@ -111,7 +114,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    width: 92.5%;
+    width: 100%;
     height: 100px;
     top: 0;
 }
@@ -127,11 +130,12 @@ body{
 }
 
 .IconPlus{
+    margin:0px 30px ;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+
     /*background-color: rgb(255,0,255);*/
 
 }
@@ -282,8 +286,8 @@ body{
 }
 .ADV1{
     color: white;
-    width:60% ;
-    height:200px ;
+    width:60%;
+    height:150px ;
     margin-left: 50px ;
     display: flex;
     background-color: black;
@@ -509,6 +513,46 @@ span{
 }
 
 /*------------------------MEDIA QUERY------------------------*/
+@media screen and (max-width: 1400px){
+    .ADV2{
+        height: 100px;
+        width: 300px;
+    }
+
+    .ADV2Container{
+        position:fixed;
+        bottom: 0;
+        z-index: 10;
+        margin: auto;
+        width: 50%;
+        left: 25%;
+    }
+
+    .MainWrapper{
+        width: 100%!important;
+    }
+    .HeaderWrapper{
+        width: 100%!important;
+    }
+
+    .Footer{
+        width: 100%!important;
+    }
+    .WebLinks{
+        width: 100%!important;
+        justify-content: space-evenly;
+    }
+
+    .Container{
+        width: 100%!important;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+
+}
+
 
 @media screen and (max-width: 1080px) {
 
@@ -648,24 +692,11 @@ span{
         display:flex;
     }
 
-    .ADV2{
-        height: 60px;
-        width: 300px;
-    }
-
-    .ADV2Container{
-        position:fixed;
-        bottom: 0;
-        z-index: 10;
-        margin: auto;
-        width: 50%;
-        left: 25%;
-    }
-
     .Footer{
         width: 100%!important;
         display: flex;
         justify-content: space-evenly;
+        font-size: 0.5em;
         padding:30px 0px;
         margin: 0px!important;
     }
@@ -707,7 +738,9 @@ span{
 
 
 /* COSE DA FARE:
-- RENDERE RESPONSIVE
+- MENU A TENDINA CON MAPPINA
+-MENU ACCANTO
+
 
 
 

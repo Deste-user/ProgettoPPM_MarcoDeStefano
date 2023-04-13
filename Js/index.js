@@ -47,6 +47,12 @@ $(document).ready(function () {
         $(".SecondRowImage").css("height", 186);
         $(".colimage").css("height", altezza_img);
         }
+        if(larghezza_schermo <= 1080){
+                $("#logo").css("line-height", "2");
+        }else{
+            $(".HeaderWrapper").css("height", "100px");
+            $("#logo").css("line-height", "auto");
+        }
 
         let larghezza_img = $(".SecondRowImage").width();
         $(".colimage").width(larghezza_img);
@@ -82,7 +88,7 @@ function scrollFunction1() {
         $("#todis2").css("display", "none");
         $("#RowToCenter").css("flex-direction", "row-reverse");
         $(".SecondRowHeader").css("margin-top", "0px");
-        $(".SecondRowHeader").css("margin-left","-30px");
+        //$(".SecondRowHeader").css("margin-left","-30px");
         $(".SecondRowHeader").css("margin-right","20px");
         $("#frh").css("justify-content", "end");
         $(".IconPlus").css("margin-left", "30px");
