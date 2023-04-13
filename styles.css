@@ -468,17 +468,17 @@ span{
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 20px;
-    height: 100px;
+    height: auto;
     align-content: center;
     align-items: center;
     width: 70%;
-    border-right: 1px solid #BFBFBF ;
     color: grey;
     z-index: 0;
 }
 .WebLinksContainer{
     display:flex;
     justify-content: space-between;
+    gap:0;
     align-content: center;
 }
 .RowImage1{
@@ -495,6 +495,17 @@ span{
 .Article{
     display: flex;
     flex-direction: column;
+}
+.LastPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.AnotherLink{
+    flex-direction: row;
+    text-align: center;
+
 }
 
 /*------------------------MEDIA QUERY------------------------*/
@@ -564,7 +575,7 @@ span{
         padding-left: 0;
         padding-right: 0;
         width: 100%!important;
-        height: 50px!important;
+        height: 30px!important;
         z-index: 20;
     }
     .FirstRowHeader{
@@ -638,7 +649,7 @@ span{
     }
 
     .ADV2{
-        height: 80px;
+        height: 60px;
         width: 300px;
     }
 
@@ -648,7 +659,7 @@ span{
         z-index: 10;
         margin: auto;
         width: 50%;
-        left: 30%;
+        left: 25%;
     }
 
     .Footer{
@@ -668,6 +679,17 @@ span{
         display: flex;
         flex-direction: column;
         width: 90% ;
+    }
+    .LastPart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+    .WebLinks{
+        flex-direction: column;
     }
 
 
