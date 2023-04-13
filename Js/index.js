@@ -25,6 +25,7 @@ $(document).ready(function () {
     let larghezza_img = $(".SecondRowImage").width();
     $(".colimage").width(larghezza_img);
 
+
     $(window).resize(function (){
         larghezza_schermo= $(window).width();
         $(".SearchInput").focusin(function (){
