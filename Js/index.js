@@ -26,8 +26,10 @@ $(document).ready(function () {
     $(".colimage").width(larghezza_img);
 
 
+
     $(window).resize(function (){
         larghezza_schermo= $(window).width();
+
         $(".SearchInput").focusin(function (){
             $(".InputSearchFiles").css("border-bottom", "2px solid red");
         });

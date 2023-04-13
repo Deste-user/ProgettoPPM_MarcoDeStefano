@@ -500,10 +500,6 @@ span{
 /*------------------------MEDIA QUERY------------------------*/
 
 @media screen and (max-width: 1080px) {
-    .Container{
-
-    }
-
 
     .RowArticle1{
         flex-direction: column!important;
@@ -656,9 +652,11 @@ span{
     }
 
     .Footer{
-        width: 90%!important;
+        width: 100%!important;
+        display: flex;
+        justify-content: space-evenly;
+        padding:30px 0px;
         margin: 0px!important;
-        padding-right: 50px;
     }
     #mediachange{
         flex-direction: column!important;
