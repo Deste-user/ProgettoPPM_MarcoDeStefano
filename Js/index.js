@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
 
-    $(window).resize(function (){
+    $(window).on("resize",function (){
         larghezza_schermo= $(window).width();
 
         $(".SearchInput").focusin(function (){
@@ -39,16 +39,16 @@ $(document).ready(function () {
         });
         let altezza_img = $("#ImgCamp").height();
         if(larghezza_schermo <= 1080){
-        $(".AAA").css("height", 600);
-        $(".SecondRowImage").css("height", 300);
-        $(".colimage").css("height", 600);
+            $(".AAA").css("height", 600);
+            $(".SecondRowImage").css("height", 300);
+            $(".colimage").css("height", 600);
         }else{
-        $(".AAA").css("height", 373);
-        $(".SecondRowImage").css("height", 186);
-        $(".colimage").css("height", altezza_img);
+            $(".AAA").css("height", 373);
+            $(".SecondRowImage").css("height", 186);
+            $(".colimage").css("height", altezza_img);
         }
         if(larghezza_schermo <= 1080){
-                $("#logo").css("line-height", "2");
+            $("#logo").css("line-height", "2");
         }else{
             $(".HeaderWrapper").css("height", "100px");
             $("#logo").css("line-height", "auto");
@@ -57,22 +57,63 @@ $(document).ready(function () {
         let larghezza_img = $(".SecondRowImage").width();
         $(".colimage").width(larghezza_img);
 
+        //Larghezza Footer che si adatta alla larghezza del MainWrapper
+        let larghezza_mainwrapper = $(".MainWrapper").width();
+        $(".Footer").width(larghezza_mainwrapper);
+
+        //Dimensione mappa e mehr in base alla larghezza dell'HeaderWrapper + altezza dal top
+        let larghezza_headerwrapper = $(".HeaderWrapper").width();
+        let altezza_headerwrapper = $(".HeaderWrapper").height();
+        $("#map").width(larghezza_headerwrapper);
+        $("#mehr").width(larghezza_headerwrapper);
+        let position_headerwrapper = $(".HeaderWrapper").position();
+        $("#map").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+        $("#map").css("left", altezza_headerwrapper.left);
+        $("#mehr").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+        $("#mehr").css("left", altezza_headerwrapper.left);
     });
 
     window.onscroll = function() {
         let larg= $(window).width();
         scrollFunction();
         if(larg > 1080){
-        scrollFunction1();
+            scrollFunction1();
+            setTimeout(function (){
+                let larghezza_headerwrapper = $(".HeaderWrapper").width();
+                let altezza_headerwrapper = $(".HeaderWrapper").height();
+                $("#map").width(larghezza_headerwrapper);
+                $("#mehr").width(larghezza_headerwrapper);
+                let position_headerwrapper = $(".HeaderWrapper").position();
+                $("#map").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+                $("#map").css("left", altezza_headerwrapper.left);
+                $("#mehr").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+                $("#mehr").css("left", altezza_headerwrapper.left);
+            },300);
         }
-        };
+    };
 
+    //Larghezza Footer che si adatta alla larghezza del MainWrapper
+    let larghezza_mainwrapper = $(".MainWrapper").width();
+    $(".Footer").width(larghezza_mainwrapper);
+
+    //Dimensione mappa e mehr in base alla larghezza dell'HeaderWrapper + altezza dal top
+    let larghezza_headerwrapper = $(".HeaderWrapper").width();
+    let altezza_headerwrapper = $(".HeaderWrapper").height();
+    $("#map").width(larghezza_headerwrapper);
+    $("#mehr").width(larghezza_headerwrapper);
+    let position_headerwrapper = $(".HeaderWrapper").position();
+    $("#map").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+    $("#map").css("left", altezza_headerwrapper.left);
+    $("#mehr").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+    $("#mehr").css("left", altezza_headerwrapper.left);
 });
-
+var display_mehr = 0;
 function scrollFunction() {
     let mybutton = $("#Buttontop");
     if ($(window).scrollTop()) {
+        if(display_mehr == 0){
         mybutton.css("display", "block")
+        }
     } else {
         mybutton.css("display", "none")
     }
@@ -107,8 +148,51 @@ function scrollFunction1() {
         $("#logo").css("line-height", "2");
         $("#logo").css("width", "17%");
     }
+    return true;
+
 };
 
 
+// Funzione per mostrare/nascondere la mappa
+var display_mappa = 0;
+function mappa(){
+    if(display_mappa == 0) {
+        $("#map").css("display", "flex");
+        $("#DropDownMappa").css("transform", "rotate(180deg)");
+        display_mappa = 1;
+    }else{
+        $("#map").css("display", "none");
+        $("#DropDownMappa").css("transform", "rotate(360deg)");
+        display_mappa = 0;
+    }
+}
 
+function seleziona_zona(id){
+    $(".Zona").attr("src", "img/Mappa/" + id + ".png");
+}
 
+// Funzione per mostrare/nascondere il menu mehr
+
+function mehr(){
+    larghezza_schermo= $(window).width();
+    if(display_mehr == 0) {
+        if(larghezza_schermo <= 1080){
+        topFunction();
+        $(".ADV2").css("display", "none");
+        $("#Buttontop").css("display", "none");
+        }else{
+            $("#mehr").css("position", "absolute");
+        }
+        $("#mehr").css("display", "flex");
+        $("#DropDownMehr").css("transform", "rotate(180deg)");
+        $("#hamburger").attr("src", "img/menu_open.png");
+        display_mehr = 1;
+    }else{
+        $(".ADV2").css("display", "flex");
+        $("#Buttontop").css("display", "flex");
+        $("#mehr").css("display", "none");
+        $("#DropDownMehr").css("transform", "rotate(360deg)");
+        $("#hamburger").attr("src", "img/menu_close.png");
+        display_mehr = 0;
+    }
+}

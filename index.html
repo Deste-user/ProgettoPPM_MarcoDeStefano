@@ -14,340 +14,630 @@
 
 <div class="Container">
     <div class="ADV1"><span>ADV1</span></div>
-<div style="flex-direction: row; display: flex; width: 100%;">
-<div class="MainWrapper">
-    <div class="HeaderWrapper" id="nav">
+    <div style="flex-direction: row; display: flex; width: 100%;">
+        <div class="MainWrapper">
+            <div class="HeaderWrapper" id="nav">
 
-        <div class="SignMenu">
-            <img src="img/icons8-menu.svg" height="40">
-        </div>
-
-        <div class="LogoHeader" id="logo">
-            <div class="LogoFirstRow">
-                <div style="background-color: rgb(212, 29, 36);width:60%;color:white;display: flex;justify-content: center;align-content: center; align-items: center;">
-                <span>stol</span>
-                </div>
-                <div style="background-color: rgb(226, 226, 226);width:40%;height:100%;color:black;display: flex;justify-content: center;align-content: center; align-items: center;">
-                    <span >.it</span>
-                </div>
-            </div>
-            <div class="LogoSecondRow">
-                <span style="font-size: 0.5em">&nbsp;NACHRICHTEN F&uuml;R S&uuml;DTIROL&nbsp;</span>
-            </div>
-        </div>
-
-        <div class="RowHeaderMedia">
-            <div style="margin-right: 40px"><img src="img/SearchIcon.png" height="40"></div>
-            <div><img src="img/icons8-orologio%20(1).svg" height="40"></div>
-            <div class="FakeLogo" style="width: 40px; height: 40px; font-size: 30px;"><span>S</span></div>
-        </div>
-
-
-        <div class="ColHeader" id="RowToCenter">
-            <div class="FirstRowHeader" id="frh" >
-                <div class="InputSearchFiles" id="todis1">
-                    <img src="img/SearchIcon.png" height="24">
-                    <input type="text" placeholder="Suche..." class="SearchInput">
-                </div>
-                <div class="Description" id="todis2">
-                    <span>Dolomiten</span>
-                    <span>&nbsp;|&nbsp;</span>
-                    <span>Newsticker</span>
-                </div>
-                <div class="IconPlus">
-                    <img src="img/sun.svg" height="24">
-                    <span>&nbsp;|&nbsp;</span>
-                    <img src="img/User.png" height="24">
-                    <span>&nbsp;|&nbsp;</span>
-                    <div class="FakeLogo"><span>S</span></div>
-                </div>
-            </div>
-            <div class="SecondRowHeader">
-                <div style="flex-direction: row;display: flex; ">
-                    <span>Bezirke</span>
-                    <img src='img/dropdown-2.svg' height="20" width="20"  style="margin-bottom:3px;margin-right: 5px; ">
+                <div class="SignMenu">
+                    <img id="hamburger" src="img/menu_close.png" height="32" style="cursor: pointer;" onclick="mehr()">
                 </div>
 
-                <span>
+                <div class="LogoHeader" id="logo">
+                    <div class="LogoFirstRow">
+                        <div style="background-color: rgb(212, 29, 36);width:60%;color:white;display: flex;justify-content: center;align-content: center; align-items: center;">
+                            <span>stol</span>
+                        </div>
+                        <div style="background-color: rgb(226, 226, 226);width:40%;height:100%;color:black;display: flex;justify-content: center;align-content: center; align-items: center;">
+                            <span >.it</span>
+                        </div>
+                    </div>
+                    <div class="LogoSecondRow">
+                        <span style="font-size: 0.5em">&nbsp;NACHRICHTEN F&uuml;R S&uuml;DTIROL&nbsp;</span>
+                    </div>
+                </div>
+
+                <div class="RowHeaderMedia">
+                    <div style="margin-right: 25px"><img src="img/SearchIcon.png" height="32"></div>
+                    <div><img src="img/icons8-orologio%20(1).svg" height="32"></div>
+                    <div class="FakeLogo" style="width: 32px; height: 32px; font-size: 25px;"><span>S</span></div>
+                </div>
+
+
+                <div class="ColHeader" id="RowToCenter">
+                    <div class="FirstRowHeader" id="frh" >
+                        <div class="InputSearchFiles" id="todis1">
+                            <img src="img/SearchIcon.png" height="24">
+                            <input type="text" placeholder="Suche..." class="SearchInput">
+                        </div>
+                        <div class="Description" id="todis2">
+                            <span>Dolomiten</span>
+                            <span>&nbsp;|&nbsp;</span>
+                            <span>Newsticker</span>
+                        </div>
+                        <div class="IconPlus">
+                            <img src="img/sun.svg" height="24">
+                            <span>&nbsp;|&nbsp;</span>
+                            <img src="img/User.png" height="24">
+                            <span>&nbsp;|&nbsp;</span>
+                            <div class="FakeLogo"><span>S</span></div>
+                        </div>
+                    </div>
+                    <div class="SecondRowHeader">
+                        <div style="flex-direction: row;display: flex; cursor: pointer;" onclick="mappa()">
+                            <span>Bezirke</span>
+                            <img id="DropDownMappa" src='img/dropdown-2.svg' height="20" width="20"  style="margin-bottom:3px;margin-right: 5px; ">
+                        </div>
+
+                        <span>
                     Chronik
                 </span>
-                <span>
+                        <span>
                     Polinik
                 </span>
-                <span>
+                        <span>
                     Wirtschaft
                 </span>
-                <span>
+                        <span>
                     Sport
                 </span>
-                <span>
+                        <span>
                     Kultur
                 </span>
-                <span>
+                        <span>
                     Videos
                 </span>
-                <div style="flex-direction: row-reverse;display: flex;">
-                    <img src='img/dropdown-2.svg' height="20" width="20"  style="margin-bottom:3px;margin-right: 5px; ">
-                <span>
-                    Mehr
-                </span>
+                        <div style="flex-direction: row;display: flex; cursor: pointer;" onclick="mehr()">
+                            <span>Mehr</span>
+                            <img id="DropDownMehr" src='img/dropdown-2.svg' height="20" width="20"  style="margin-bottom:3px;margin-right: 5px; ">
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div id="map">
+                <div class="ListaVociMappa">
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(10)" onmouseleave="seleziona_zona(0)">
+                        <span>Landesweit</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(8)" onmouseleave="seleziona_zona(0)">
+                        <span>Bozen Leifers</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(7)" onmouseleave="seleziona_zona(0)">
+                        <span>Bozen Land</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(5)" onmouseleave="seleziona_zona(0)">
+                        <span>Ladinien</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(2)" onmouseleave="seleziona_zona(0)">
+                        <span>Meran-Burggrafenamt</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(6)" onmouseleave="seleziona_zona(0)">
+                        <span>Eisacktal</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(4)" onmouseleave="seleziona_zona(0)">
+                        <span>Pustertal</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(9)" onmouseleave="seleziona_zona(0)">
+                        <span>Überetsch-Unterland</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(1)" onmouseleave="seleziona_zona(0)">
+                        <span>Vinschgau</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(3)" onmouseleave="seleziona_zona(0)">
+                        <span>Wipptal</span>
+                    </div>
+                </div>
+                <div style="height: 40px; width: 40px;"></div>
+                <img class="Zona" src="img/Mappa/0.png" height="286">
+            </div>
+
+            <div id="mehr">
+                <div class="SubBottomMehr">
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">Chronik</span>
+                        <span class="VoceGrigia">Lokal</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Bezirke</span>
+                        <span class="VoceGrigia">Landesweit</span>
+                        <span class="VoceGrigia">Bozen Leifers</span>
+                        <span class="VoceGrigia">Bozen Land</span>
+                        <span class="VoceGrigia">Eisacktal</span>
+                        <span class="VoceGrigia">Ladinien</span>
+                        <span class="VoceGrigia">Meran-Burggrafenamt</span>
+                        <span class="VoceGrigia">Pustertal</span>
+                        <span class="VoceGrigia">Überetsch-Unterland</span>
+                        <span class="VoceGrigia">Vinschgau</span>
+                        <span class="VoceGrigia">Wipptal</span>
+                    </div>
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">Politik</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">Wirtschaft</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Wirtschaft</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Kultur</span>
+                        <span class="VoceGrigia">Überblick</span>
+                        <span class="VoceGrigia">Kunst</span>
+                        <span class="VoceGrigia">Musik</span>
+                        <span class="VoceGrigia">Theater</span>
+                        <span class="VoceGrigia">Literatur</span>
+                        <span class="VoceGrigia">Bildung</span>
+                        <span class="VoceGrigia">Kino / TV</span>
+                    </div>
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">Sport</span>
+                        <span class="VoceGrigia">Lokal</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Panorama</span>
+                        <span class="VoceGrigia">Überblick</span>
+                        <span class="VoceGrigia">Panorama</span>
+                        <span class="VoceGrigia">Auto / Motor</span>
+                        <span class="VoceGrigia">Gesundheit</span>
+                        <span class="VoceGrigia">Multimedia</span>
+                        <span class="VoceGrigia">Backstage</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">OnTour</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Videos</span>
+                    </div>
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">s+ im Überblick</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Events</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Comedy</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Rätsel</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Leserreporter</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">In meiner Nähe</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Lesezeichen</span>
+                    </div>
+                </div>
+                <div class="ContainerListaMehr">
+                    <div class="ListaVociMehr" style="width: 100%;">
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/sole.svg" height="24">
+                            <span>&nbsp;&nbsp;Wetter</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/auto.png" height="24">
+                            <span>&nbsp;&nbsp;Verkehr</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/croce.png" height="24">
+                            <span>&nbsp;&nbsp;Todesanzeigen</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/d.png" height="24">
+                            <span>&nbsp;&nbsp;Dolomiten</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/tempo.png" height="24">
+                            <span>&nbsp;&nbsp;Newsticker</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/valigia.png" height="24">
+                            <span>&nbsp;&nbsp;Stellenanzeigen</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/gps.png" height="24">
+                            <span>&nbsp;&nbsp;In meiner Nähe</span>
+                        </div>
+                        <div class="sottoMenu" style="border-bottom: 1px solid #b7b7b7;">
+                            <img src="img/Mehr/utente.png" height="24">
+                            <span>&nbsp;&nbsp;Login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="MainContainer">
+                <div class="RowImage" style="justify-content: center;align-items: center; ">
+                    <div class="ADV4"><span>ADV1</span></div>
+                </div>
+                <div class="RowImage" >
+                    <div id="BigImage" class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); flex-grow: 1;">
+                        <!-- Si usa il flex-grow per adattare l'immagine al cento% del rimanente spazio visto che le immagini di destra hanno una larghezza fissata da quelle sotto-->
+                        <span></span>
+                        <!--<span>TEST</span>-->
+                        <div class="OverTitle">
+                            <div class="GenreContainer">
+                                <div class="Genre">
+                                    <span>GENERE</span>
+                                </div>
+                            </div>
+                            <div class="TitleContainer">
+                                <div class="Title">
+                                    <span>TITOLO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="AAA FirstRowImage">
+                        <div id="ImgCamp" class="ImageContainer colimage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-top: 0;">
+                            <span></span>
+                            <!--<span>TEST</span>-->
+                            <div class="OverTitle">
+                                <div class="GenreContainer">
+                                    <div class="Genre">
+                                        <span>GENERE</span>
+                                    </div>
+                                </div>
+                                <div class="TitleContainer">
+                                    <div class="Title">
+                                        <span>TITOLO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ImageContainer colimage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-bottom: 0;">
+                            <span></span>
+                            <!--<span>TEST</span>-->
+                            <div class="OverTitle">
+                                <div class="GenreContainer">
+                                    <div class="Genre">
+                                        <span>GENERE</span>
+                                    </div>
+                                </div>
+                                <div class="TitleContainer">
+                                    <div class="Title">
+                                        <span>TITOLO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="RowImage">
+                    <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                        <div class="IconContainerImg" >
+                            <div class="FakeLogo" >
+                                <span>S</span>
+                            </div>
+                            <img src="img/Stato.png" height="30">
+                        </div>
+
+                        <div class="OverTitle">
+                            <div class="GenreContainer">
+                                <div class="Genre">
+                                    <span>GENERE</span>
+                                </div>
+                            </div>
+                            <div class="TitleContainer">
+                                <div class="Title">
+                                    <span>TITOLO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                        <div class="IconContainerImg" >
+                            <div class="WhiteBox" >
+                                <span>UMFRAGE</span>
+                            </div>
+                            <img src="img/Stato.png" height="30">
+                        </div>
+
+                        <div class="OverTitle">
+                            <div class="GenreContainer">
+                                <div class="Genre">
+                                    <span>GENERE</span>
+                                </div>
+                            </div>
+                            <div class="TitleContainer">
+                                <div class="Title">
+                                    <span>TITOLO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
+                        <div class="IconContainerImg" >
+                            <img src="img/play.png" height="24">
+                        </div>
+
+                        <div class="OverTitle">
+                            <div class="GenreContainer">
+                                <div class="Genre">
+                                    <span>GENERE</span>
+                                </div>
+                            </div>
+                            <div class="TitleContainer">
+                                <div class="Title">
+                                    <span>TITOLO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="RowImage1">
+                    <div class="ADV"></div>
+                </div>
+                <div class="ListArticle1">
+
+                    <div class="ArticleOfList">
+                        <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                        <div class="Article">
+                            <div>
+                                <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                            </div>
+                            <div class="TitleArticle">
+                                <div class="FakeLogo"><span>S</span></div>
+                                <span >&nbsp; Titolo Articolo</span>
+                            </div>
+                            <div class="MiniArticle">
+                                <p>
+                                    Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ArticleOfList Border">
+                        <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                        <div class="Article">
+                            <div>
+                                <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                            </div>
+                            <div class="TitleArticle">
+                                <div class="FakeLogo"><span>S</span></div>
+                                <span>&nbsp;Titolo Articolo</span>
+                            </div>
+
+                            <div class="MiniArticle">
+                                <p>
+                                    Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ArticleOfList">
+                        <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                        <div class="Article">
+                            <div>
+                                <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                            </div>
+                            <div class="TitleArticle">
+                                <div class="FakeLogo"><span>S</span></div>
+                                <span>&nbsp;Titolo Articolo</span>
+                            </div>
+                            <div class="MiniArticle">
+                                <p>
+                                    Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 100%">&nbsp;</div>
+
+                <div class="RowArticle RowArticle1">
+                    <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/600x400/c2c2c2/949494?text=LoremIpsum');width: 60%;"></div>
+                    <div class="ArticleInRow">
+                        <div class="TitleArticle" style="flex-direction: column;">
+                            <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span></div>
+                            <span>&nbsp;Titolo Articolo</span>
+                        </div>
+                        <div>
+                            <p>Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class =" LineDivision "> &nbsp;</div><div>&nbsp; </div>
+                <div id="mediachange" style="flex-direction: row; justify-content: start; width: 100%; display: flex;">
+                    <div id="mediachange1" style="flex-direction: column;display: flex; width: 70%;">
+                        <div class="ListArticle" >
+                            <div class="ImageContainer SecondRowImage SecondRowImage1" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
+
+                            <div class="ArticleInRow">
+                                <div class="TitleArticle" style="flex-direction: column; ">
+                                    <div style="justify-content: start"><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <span>&nbsp;Titolo Articolo</span>
+                                </div>
+                                <div>
+                                    <p>Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
+
+                        <div class="ListArticle" >
+                            <div class="ImageContainer SecondRowImage SecondRowImage1" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
+                            <div class="ArticleInRow">
+                                <div class="TitleArticle" style="flex-direction: column">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <span>&nbsp;Titolo Articolo</span>
+                                </div>
+                                <div>
+                                    <p>Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
+                    </div>
+                    <div class="ADV3" > <span>ADV3</span></div>
+
+                </div>
+            </div>
+            <div class="BottomMap">
+                <span style="font-weight: bold; font-size: 2em; color: #1c1c1c;">Bezirke</span>
+            </div>
+            <div class="BottomMap">
+                <div class="ListaVociMappa">
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(10)" onmouseleave="seleziona_zona(0)">
+                        <span>Landesweit</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(8)" onmouseleave="seleziona_zona(0)">
+                        <span>Bozen Leifers</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(7)" onmouseleave="seleziona_zona(0)">
+                        <span>Bozen Land</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(5)" onmouseleave="seleziona_zona(0)">
+                        <span>Ladinien</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(2)" onmouseleave="seleziona_zona(0)">
+                        <span>Meran-Burggrafenamt</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(6)" onmouseleave="seleziona_zona(0)">
+                        <span>Eisacktal</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(4)" onmouseleave="seleziona_zona(0)">
+                        <span>Pustertal</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(9)" onmouseleave="seleziona_zona(0)">
+                        <span>Überetsch-Unterland</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(1)" onmouseleave="seleziona_zona(0)">
+                        <span>Vinschgau</span>
+                    </div>
+                    <div class="VoceMappa" onmouseenter="seleziona_zona(3)" onmouseleave="seleziona_zona(0)">
+                        <span>Wipptal</span>
+                    </div>
+                </div>
+                <div style="height: 40px; width: 40px;"></div>
+                <img class="Zona" src="img/Mappa/0.png" height="286">
+            </div>
+            <div class="BottomMehr">
+                <div class="SubBottomMehr">
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">Chronik</span>
+                        <span class="VoceGrigia">Lokal</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Bezirke</span>
+                        <span class="VoceGrigia">Landesweit</span>
+                        <span class="VoceGrigia">Bozen Leifers</span>
+                        <span class="VoceGrigia">Bozen Land</span>
+                        <span class="VoceGrigia">Eisacktal</span>
+                        <span class="VoceGrigia">Ladinien</span>
+                        <span class="VoceGrigia">Meran-Burggrafenamt</span>
+                        <span class="VoceGrigia">Pustertal</span>
+                        <span class="VoceGrigia">Überetsch-Unterland</span>
+                        <span class="VoceGrigia">Vinschgau</span>
+                        <span class="VoceGrigia">Wipptal</span>
+                    </div>
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">Politik</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">Wirtschaft</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Wirtschaft</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Kultur</span>
+                        <span class="VoceGrigia">Überblick</span>
+                        <span class="VoceGrigia">Kunst</span>
+                        <span class="VoceGrigia">Musik</span>
+                        <span class="VoceGrigia">Theater</span>
+                        <span class="VoceGrigia">Literatur</span>
+                        <span class="VoceGrigia">Bildung</span>
+                        <span class="VoceGrigia">Kino / TV</span>
+                    </div>
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">Sport</span>
+                        <span class="VoceGrigia">Lokal</span>
+                        <span class="VoceGrigia">Weltweit</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Panorama</span>
+                        <span class="VoceGrigia">Überblick</span>
+                        <span class="VoceGrigia">Panorama</span>
+                        <span class="VoceGrigia">Auto / Motor</span>
+                        <span class="VoceGrigia">Gesundheit</span>
+                        <span class="VoceGrigia">Multimedia</span>
+                        <span class="VoceGrigia">Backstage</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">OnTour</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Videos</span>
+                    </div>
+                    <div class="ListaVociMehr">
+                        <span class="VoceRossa">s+ im Überblick</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Events</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Comedy</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Rätsel</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Leserreporter</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">In meiner Nähe</span>
+                        <span class="VoceGrigia">&nbsp;</span>
+                        <span class="VoceRossa">Lesezeichen</span>
+                    </div>
+                </div>
+
+                <div class="ContainerListaMehr">
+                    <div class="ListaVociMehr" style="width: 100%;">
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/sole.svg" height="24">
+                            <span>&nbsp;&nbsp;Wetter</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/auto.png" height="24">
+                            <span>&nbsp;&nbsp;Verkehr</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/croce.png" height="24">
+                            <span>&nbsp;&nbsp;Todesanzeigen</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/d.png" height="24">
+                            <span>&nbsp;&nbsp;Dolomiten</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/tempo.png" height="24">
+                            <span>&nbsp;&nbsp;Newsticker</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/valigia.png" height="24">
+                            <span>&nbsp;&nbsp;Stellenanzeigen</span>
+                        </div>
+                        <div class="sottoMenu">
+                            <img src="img/Mehr/gps.png" height="24">
+                            <span>&nbsp;&nbsp;In meiner Nähe</span>
+                        </div>
+                        <div class="sottoMenu" style="border-bottom: 1px solid #b7b7b7;">
+                            <img src="img/Mehr/utente.png" height="24">
+                            <span>&nbsp;&nbsp;Login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ADV2Container" >
+            <div class="ADV2">
+                <span style="color:white;">ADV2</span>
             </div>
         </div>
     </div>
 
-    <div class="MainContainer">
-        <div class="RowImage" style="justify-content: center;align-items: center; ">
-        <div class="ADV4"><span>ADV1</span></div>
-        </div>
-        <div class="RowImage" >
-            <div id="BigImage" class="ImageContainer" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); flex-grow: 1;">
-                <!-- Si usa il flex-grow per adattare l'immagine al cento% del rimanente spazio visto che le immagini di destra hanno una larghezza fissata da quelle sotto-->
-                <span></span>
-                <!--<span>TEST</span>-->
-                <div class="OverTitle">
-                    <div class="GenreContainer">
-                        <div class="Genre">
-                            <span>GENERE</span>
-                        </div>
-                    </div>
-                    <div class="TitleContainer">
-                        <div class="Title">
-                            <span>TITOLO</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="AAA FirstRowImage">
-                <div id="ImgCamp" class="ImageContainer colimage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-top: 0;">
-                    <span></span>
-                    <!--<span>TEST</span>-->
-                    <div class="OverTitle">
-                        <div class="GenreContainer">
-                            <div class="Genre">
-                                <span>GENERE</span>
-                            </div>
-                        </div>
-                        <div class="TitleContainer">
-                            <div class="Title">
-                                <span>TITOLO</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ImageContainer colimage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 100%; margin-bottom: 0;">
-                    <span></span>
-                    <!--<span>TEST</span>-->
-                    <div class="OverTitle">
-                        <div class="GenreContainer">
-                            <div class="Genre">
-                                <span>GENERE</span>
-                            </div>
-                        </div>
-                        <div class="TitleContainer">
-                            <div class="Title">
-                                <span>TITOLO</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="RowImage">
-            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
-                <div class="IconContainerImg" >
-                    <div class="FakeLogo" >
-                        <span>S</span>
-                    </div>
-                    <img src="img/Stato.png" height="30">
-                </div>
-
-                <div class="OverTitle">
-                    <div class="GenreContainer">
-                        <div class="Genre">
-                            <span>GENERE</span>
-                        </div>
-                    </div>
-                    <div class="TitleContainer">
-                        <div class="Title">
-                            <span>TITOLO</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
-                <div class="IconContainerImg" >
-                    <div class="WhiteBox" >
-                        <span>UMFRAGE</span>
-                    </div>
-                    <img src="img/Stato.png" height="30">
-                </div>
-
-                <div class="OverTitle">
-                    <div class="GenreContainer">
-                        <div class="Genre">
-                            <span>GENERE</span>
-                        </div>
-                    </div>
-                    <div class="TitleContainer">
-                        <div class="Title">
-                            <span>TITOLO</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ImageContainer SecondRowImage" style="background-image: url('https://via.placeholder.com/1000x1000/1ce6d9/969696?text=LoremIpsum'); width: 35%;">
-                <div class="IconContainerImg" >
-                    <img src="img/play.png" height="24">
-                </div>
-
-                <div class="OverTitle">
-                    <div class="GenreContainer">
-                        <div class="Genre">
-                            <span>GENERE</span>
-                        </div>
-                    </div>
-                    <div class="TitleContainer">
-                        <div class="Title">
-                            <span>TITOLO</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="RowImage1">
-            <div class="ADV"></div>
-        </div>
-        <div class="ListArticle1">
-
-            <div class="ArticleOfList">
-            <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
-                <div class="Article">
-                <div>
-                   <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
-               </div>
-               <div class="TitleArticle">
-                   <div class="FakeLogo"><span>S</span></div>
-                   <span >&nbsp; Titolo Articolo</span>
-               </div>
-                <div class="MiniArticle">
-                    <p>
-                        Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="ArticleOfList Border">
-                <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
-                <div class="Article">
-                <div>
-                    <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
-                </div>
-                <div class="TitleArticle">
-                    <div class="FakeLogo"><span>S</span></div>
-                    <span>&nbsp;Titolo Articolo</span>
-                </div>
-
-                <div class="MiniArticle">
-                    <p>
-                        Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
-                    </p>
-                </div>
-                </div>
-            </div>
-
-            <div class="ArticleOfList">
-                <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
-                <div class="Article">
-                   <div>
-                        <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
-                   </div>
-                <div class="TitleArticle">
-                    <div class="FakeLogo"><span>S</span></div>
-                    <span>&nbsp;Titolo Articolo</span>
-                </div>
-                <div class="MiniArticle">
-                     <p>
-                         Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
-                     </p>
-                </div>
-            </div>
-            </div>
-        </div>
-        <div style="width: 100%">&nbsp;</div>
-
-       <div class="RowArticle RowArticle1">
-       <div class="ImageContainer" style="background-image: url('https://via.placeholder.com/600x400/c2c2c2/949494?text=LoremIpsum');width: 60%;"></div>
-         <div class="ArticleInRow">
-           <div class="TitleArticle" style="flex-direction: column;">
-               <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span></div>
-               <span>&nbsp;Titolo Articolo</span>
-           </div>
-               <div>
-                   <p>Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.</p>
-               </div>
-         </div>
-       </div>
-       <div class =" LineDivision "> &nbsp;</div><div>&nbsp; </div>
-        <div id="mediachange" style="flex-direction: row; justify-content: start; width: 100%; display: flex;">
-         <div id="mediachange1" style="flex-direction: column;display: flex; width: 70%;">
-            <div class="ListArticle" >
-                <div class="ImageContainer SecondRowImage SecondRowImage1" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
-
-                <div class="ArticleInRow">
-                    <div class="TitleArticle" style="flex-direction: column; ">
-                        <div style="justify-content: start"><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
-                        <span>&nbsp;Titolo Articolo</span>
-                    </div>
-                    <div>
-                        <p>Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.</p>
-                    </div>
-                </div>
-            </div>
-             <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
-
-            <div class="ListArticle" >
-                <div class="ImageContainer SecondRowImage SecondRowImage1" style="background-image:url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum');width: 50% "></div>
-                <div class="ArticleInRow">
-                    <div class="TitleArticle" style="flex-direction: column">
-                        <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
-                        <span>&nbsp;Titolo Articolo</span>
-                    </div>
-                    <div>
-                        <p>Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.</p>
-                    </div>
-                </div>
-            </div>
-             <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
-        </div>
-        <div class="ADV3" > <span>ADV3</span></div>
-
-        </div>
-    </div>
-</div>
-
-    <div class="ADV2Container" >
-    <div class="ADV2">
-        <span style="color:white;">ADV2</span>
-    </div>
-    </div>
-</div>
     <div class="Footer">
-        <div class="Linkfooter" >
+        <div class="ContainerFooter">
+        <div class="Linkfooter" style="padding-left: 40px;">
             <span> Werben auf STOL </span>
             <img src="img/icons8-link-esterno.svg" height="20" >
-
         </div>
         <div class="Linkfooter" >
             <span>&nbsp; Lessereporterwerden </span>
             <img src="img/icons8-link-esterno.svg" height="20" >
-
         </div>
         <div class="Linkfooter">
             <span>&nbsp; Tourentipps  </span>
             <img src="img/icons8-link-esterno.svg" height="20" >
         </div>
+        </div>
+        <div class="ContainerFooter">
         <div class="Linkfooter" >
             <span>&nbsp; Telmi Telefonbuch   </span>
             <img src="img/icons8-link-esterno.svg" height="20" >
@@ -356,26 +646,27 @@
             <span>&nbsp; Cippy </span>
             <img src="img/icons8-link-esterno.svg" height="20" >
         </div>
+       </div>
     </div>
     <div class="LastPart">
-    <div class="WebLinks">
-        <div class="WebLinksContainer"><img src="img/Screenshot%202023-04-12%20alle%2016.18.57.png" height="90" ></div>
-        <div class="WebLinksContainer" ><img src="img/google-play-badge-logo-svgrepo-com.svg "  width="300" height="200"></div>
-        <div class="WebLinksContainer"><img src="img/download-on-the-app-store-apple-logo-svgrepo-com.svg"width="300" height="200"></div>
-    </div>
-    <div class="AnotherLink">
-    <span class="evid">Impressum</span> <span>|</span>
-    <span class="evid">AGB</span> <span>|</span>
-    <span class="evid">Privacy Policy</span> <span>|</span>
-    <span class="evid"> Cookie Policy</span> <span>|</span>
-    <span class="evid"> Privacy Einstellungen</span> <span>|</span>
-    <span class="evid">FAQ</span> <span>|</span>
-    <span class="evid">Push-Nachrichten</span>
-    </div >
-    <div style="text-align: center; margin-top: 20px;">
-      <span style="color:grey;">© 2023</span><span class="evid">&nbsp; First Avenue GmbH</span>
-    </div>
-    <div style="width: 100%; height: 150px;">&nbsp;</div>
+        <div class="WebLinks">
+            <div class="WebLinksContainer"><img src="img/Screenshot%202023-04-12%20alle%2016.18.57.png" height="90" ></div>
+            <div class="WebLinksContainer" ><img src="img/google-play-badge-logo-svgrepo-com.svg "  width="300" height="200"></div>
+            <div class="WebLinksContainer"><img src="img/download-on-the-app-store-apple-logo-svgrepo-com.svg"width="300" height="200"></div>
+        </div>
+        <div class="AnotherLink">
+            <span class="evid">Impressum</span> <span>|</span>
+            <span class="evid">AGB</span> <span>|</span>
+            <span class="evid">Privacy Policy</span> <span>|</span>
+            <span class="evid"> Cookie Policy</span> <span>|</span>
+            <span class="evid"> Privacy Einstellungen</span> <span>|</span>
+            <span class="evid">FAQ</span> <span>|</span>
+            <span class="evid">Push-Nachrichten</span>
+        </div >
+        <div style="text-align: center; margin-top: 20px;">
+            <span style="color:grey;">© 2023</span><span class="evid">&nbsp; First Avenue GmbH</span>
+        </div>
+        <div style="width: 100%; height: 150px;">&nbsp;</div>
 
     </div>
 </div>

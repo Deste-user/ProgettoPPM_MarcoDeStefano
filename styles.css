@@ -108,7 +108,7 @@ body{
 
     display: flex;
     transition: 0.3s;
-    z-index: 99;
+    z-index: 100;
     font-size: 16px;
     flex-direction: row;
     justify-content: space-between;
@@ -130,7 +130,7 @@ body{
 }
 
 .IconPlus{
-    margin:0px 30px ;
+    margin: 0px 30px ;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,7 +176,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-  /*  background-color: yellow;*/
+    /*  background-color: yellow;*/
 }
 .ImageContainer{
     display: flex;
@@ -280,7 +280,7 @@ body{
 }
 
 .Container{
-   flex-direction: column;
+    flex-direction: column;
     display: flex;
     justify-content: space-between;
 }
@@ -438,9 +438,8 @@ span{
     flex-direction:row ;
     justify-content:start;
     align-content: center;
-    padding: 30px 40px;
+    padding: 30px 0px;
     margin-left: 20px;
-    width: 66%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: grey;
@@ -509,11 +508,28 @@ span{
 .AnotherLink{
     flex-direction: row;
     text-align: center;
+}
 
+.ContainerFooter{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 /*------------------------MEDIA QUERY------------------------*/
 @media screen and (max-width: 1400px){
+
+    .VoceRossa{
+        padding: 50px ;
+        border-bottom: #9d9b9b solid 1px;
+        font-size: 2em;
+        width: 100%!important;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
     .ADV2{
         height: 100px;
         width: 400px;
@@ -538,6 +554,7 @@ span{
 
     .Footer{
         width: 100%!important;
+        flex-direction: column;
     }
     .WebLinks{
         width: 100%!important;
@@ -551,17 +568,35 @@ span{
         align-items: center;
     }
 
-
-
 }
 
 
 @media screen and (max-width: 1080px) {
+    .VoceGrigia{
+        display: none;
+    }
+
 
     .RowArticle1{
         flex-direction: column!important;
         display: flex;
     }
+    .ContainerListaMehr{
+        width: 80%!important;
+    }
+    .Zona{
+        width: 100%!important;
+    }
+
+    .ListaVociMehr{
+        width: 100%!important;
+    }
+
+    #mehr{
+        flex-direction: column-reverse!important;
+    }
+
+
 
     .Border{
         border-right: none;
@@ -569,6 +604,7 @@ span{
         border-top: #666565 1px solid;
         border-bottom: #666565 1px solid;
     }
+
 
     .MiniArticle{
         display: none;
@@ -725,27 +761,160 @@ span{
         flex-direction: column;
     }
 
+    .BottomMap{
+        flex-direction: column!important;
+    }
 
+    .BottomMehr{
+        flex-direction: column!important;
+    }
 
-
-
+    .SubBottomMehr{
+        width: 80%!important;
+        flex-direction: column!important;
+    }
 }
 
+.ContainerListaMehr{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 20%;
+}
 
+/*  MAPPA  */
 
+#map{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    position: absolute;
+    padding: 20px 0;
+    background-color: #EEEEEE;
+    border-top: 1px solid #a6a6a6;
+    z-index: 100;
+    -webkit-box-shadow: 0px 8px 12px -4px #ADADAD;
+    -moz-box-shadow: 0px 8px 12px -4px #ADADAD;
+    -o-box-shadow: 0px 8px 12px -4px #ADADAD;
+    box-shadow: 0px 8px 12px -4px #ADADAD;
+}
 
+.BottomMap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 20px 0;
+    background-color: #EEEEEE;
+}
 
+.ListaVociMappa{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
 
+.VoceMappa{
+    transition: 0.3s;
+    padding: 5px 0;
+    cursor: pointer;
+    color: #949494;
+}
 
+.VoceMappa:hover{
+    transition: 0.2s;
+    color: #1c1c1c;
+}
 
+/*  MENU MEHR  */
 
-/* COSE DA FARE:
-- MENU A TENDINA CON MAPPINA
--MENU ACCANTO
+#mehr{
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    position: fixed;
+    padding: 20px 0;
+    background-color: #EEEEEE;
+    border-top: 1px solid #a6a6a6;
+    z-index: 100;
+    -webkit-box-shadow: 0px 8px 12px -4px #ADADAD;
+    -moz-box-shadow: 0px 8px 12px -4px #ADADAD;
+    -o-box-shadow: 0px 8px 12px -4px #ADADAD;
+    box-shadow: 0px 8px 12px -4px #ADADAD;
+}
 
+.BottomMehr{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 20px 0;
+    background-color: #fff;
+}
 
+.SubBottomMehr{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row; width: 80%;
+}
 
+.ListaVociMehr{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    color: #949494;
+    padding: 0 5px;
+}
 
+.ListaVociMehr span{
+    padding: 5px 0;
+}
 
+.VoceRossa{
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 1.3em;
+}
 
- */
+.sottoMenu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    color: #1c1c1c;
+    border-top: 1px solid #b7b7b7;
+    padding: 8px 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.ListaVociMehr span:hover{
+    color: #3d3d3d;
+    cursor: pointer;
+}
+
+.ListaVociMehr .VoceRossa:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.sottoMenu:hover{
+    background-color: #dadada;
+}
+
