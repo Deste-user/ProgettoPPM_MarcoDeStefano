@@ -1,5 +1,8 @@
+
+var display_mappa = 0;
 $(document).ready(function () {
     let larghezza_schermo= $(window).width();
+
 
     $(".SearchInput").focusin(function () {
         $(".InputSearchFiles").css("border-bottom", "2px solid red");
@@ -39,6 +42,9 @@ $(document).ready(function () {
         });
         let altezza_img = $("#ImgCamp").height();
         if(larghezza_schermo <= 1080){
+            if (display_mappa == 1){
+                mappa();
+            }
             $(".AAA").css("height", 600);
             $(".SecondRowImage").css("height", 300);
             $(".colimage").css("height", 600);
@@ -76,19 +82,19 @@ $(document).ready(function () {
     window.onscroll = function() {
         let larg= $(window).width();
         scrollFunction();
-        if(larg > 1080){
+        if(larg > 1080) {
             scrollFunction1();
             setTimeout(function (){
-                let larghezza_headerwrapper = $(".HeaderWrapper").width();
-                let altezza_headerwrapper = $(".HeaderWrapper").height();
-                $("#map").width(larghezza_headerwrapper);
-                $("#mehr").width(larghezza_headerwrapper);
-                let position_headerwrapper = $(".HeaderWrapper").position();
-                $("#map").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
-                $("#map").css("left", altezza_headerwrapper.left);
-                $("#mehr").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
-                $("#mehr").css("left", altezza_headerwrapper.left);
-            },300);
+            let larghezza_headerwrapper = $(".HeaderWrapper").width();
+            let altezza_headerwrapper = $(".HeaderWrapper").height();
+            $("#map").width(larghezza_headerwrapper);
+            $("#mehr").width(larghezza_headerwrapper);
+            let position_headerwrapper = $(".HeaderWrapper").position();
+            $("#map").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+            $("#map").css("left", altezza_headerwrapper.left);
+            $("#mehr").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+            $("#mehr").css("left", altezza_headerwrapper.left);
+            },200);
         }
     };
 
@@ -111,10 +117,10 @@ var display_mehr = 0;
 function scrollFunction() {
     let mybutton = $("#Buttontop");
     if ($(window).scrollTop()) {
-        if(display_mehr == 0){
+        if(display_mehr == 0 || larghezza_schermo > 1080){
         mybutton.css("display", "block")
         }
-    } else {
+    } else{
         mybutton.css("display", "none")
     }
 }
@@ -154,7 +160,7 @@ function scrollFunction1() {
 
 
 // Funzione per mostrare/nascondere la mappa
-var display_mappa = 0;
+
 function mappa(){
     if(display_mappa == 0) {
         $("#map").css("display", "flex");

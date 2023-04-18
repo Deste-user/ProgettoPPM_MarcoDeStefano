@@ -413,7 +413,7 @@ body{
 .Border{
     border-right: #666565 1px solid;
     border-left: #666565 1px solid;
-    margin: 0px 10px;
+    /*margin: 0px 10px;*/
     padding: 0px 10px;
 }
 
@@ -572,6 +572,24 @@ span{
 
 
 @media screen and (max-width: 1080px) {
+
+    #map{
+        display: none!important;
+    }
+    .Zona{
+        width:80%!important;
+        height: auto!important;
+    }
+    .ListaVociMappa{
+        width: 100%!important;
+        flex-direction: row!important;
+        justify-content: space-evenly!important;
+    }
+
+    .ADV{
+        height: 270px;
+    }
+
     .VoceGrigia{
         display: none;
     }
@@ -583,9 +601,6 @@ span{
     }
     .ContainerListaMehr{
         width: 80%!important;
-    }
-    .Zona{
-        width: 100%!important;
     }
 
     .ListaVociMehr{
@@ -658,7 +673,7 @@ span{
         padding-right: 0;
         width: 100%!important;
         height: 30px!important;
-        z-index: 20;
+        z-index: 110;
     }
     .FirstRowHeader{
         display: none;
@@ -762,7 +777,7 @@ span{
     }
 
     .BottomMap{
-        flex-direction: column!important;
+       flex-direction: column-reverse!important;
     }
 
     .BottomMehr{
@@ -811,6 +826,16 @@ span{
     padding: 20px 0;
     background-color: #EEEEEE;
 }
+.BottomMap1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    background-color: #EEEEEE;
+}
 
 .ListaVociMappa{
     display: flex;
@@ -840,11 +865,12 @@ span{
     align-items: center;
     align-content: center;
     flex-direction: row;
-    position: fixed;
+    position: absolute;
     padding: 20px 0;
     background-color: #EEEEEE;
     border-top: 1px solid #a6a6a6;
     z-index: 100;
+    overflow-y: auto;
     -webkit-box-shadow: 0px 8px 12px -4px #ADADAD;
     -moz-box-shadow: 0px 8px 12px -4px #ADADAD;
     -o-box-shadow: 0px 8px 12px -4px #ADADAD;
@@ -887,7 +913,7 @@ span{
 .VoceRossa{
     font-weight: bold;
     color: #ff0000;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .sottoMenu{
