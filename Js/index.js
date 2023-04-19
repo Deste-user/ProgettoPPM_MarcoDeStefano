@@ -1,5 +1,6 @@
 
 var display_mappa = 0;
+var display_mehr = 0;
 $(document).ready(function () {
     let larghezza_schermo= $(window).width();
 
@@ -42,6 +43,22 @@ $(document).ready(function () {
         });
         let altezza_img = $("#ImgCamp").height();
         if(larghezza_schermo <= 1080){
+            if(display_mehr == 1){
+                $(".ADV2").css("display", "none");
+                $("#mehr").css("top","70px!important");
+                $(".MainContainer").css("display", "none");
+                $(".Footer").css("display", "none");
+                $(".LastPart").css("display", "none");
+                $(".BottomMap").css("display", "none");
+                $(".BottomMehr").css("display", "none");
+            }else{
+                $(".MainContainer").css("display", "flex");
+                $(".ADV2").css("display", "flex");
+                $(".Footer").css("display", "flex");
+                $(".LastPart").css("display", "flex");
+                $(".BottomMap").css("display", "flex");
+                $(".BottomMehr").css("display", "flex");
+            }
             if (display_mappa == 1){
                 mappa();
             }
@@ -49,10 +66,16 @@ $(document).ready(function () {
             $(".SecondRowImage").css("height", 300);
             $(".colimage").css("height", 600);
         }else{
+            $(".MainContainer").css("display", "flex");
+            $(".Footer").css("display", "flex");
+            $(".LastPart").css("display", "flex");
+            $(".BottomMap").css("display", "flex");
+            $(".BottomMehr").css("display", "flex");
             $(".AAA").css("height", 373);
             $(".SecondRowImage").css("height", 186);
             $(".colimage").css("height", altezza_img);
         }
+
         if(larghezza_schermo <= 1080){
             $("#logo").css("line-height", "2");
         }else{
@@ -185,7 +208,13 @@ function mehr(){
         if(larghezza_schermo <= 1080){
         topFunction();
         $(".ADV2").css("display", "none");
-        $("#Buttontop").css("display", "none");
+        //PROVA INIZIA DA QUI
+        $(".MainContainer").css("display", "none");
+        $(".Footer").css("display", "none");
+        $(".LastPart").css("display", "none");
+        $(".BottomMap").css("display", "none");
+        $(".BottomMehr").css("display", "none");
+        //PROVA FINISCE QUI
         }else{
             $("#mehr").css("position", "absolute");
         }
@@ -195,8 +224,14 @@ function mehr(){
         display_mehr = 1;
     }else{
         $(".ADV2").css("display", "flex");
-        $("#Buttontop").css("display", "flex");
         $("#mehr").css("display", "none");
+        //PROVA INIZIA DA QUI
+        $(".MainContainer").css("display", "flex");
+        $(".Footer").css("display", "flex");
+        $(".LastPart").css("display", "flex");
+        $(".BottomMap").css("display", "flex");
+        $(".BottomMehr").css("display", "flex");
+        //PROVA FINISCE QUA
         $("#DropDownMehr").css("transform", "rotate(360deg)");
         $("#hamburger").attr("src", "img/menu_close.png");
         display_mehr = 0;
