@@ -413,8 +413,8 @@ body{
 .Border{
     border-right: #666565 1px solid;
     border-left: #666565 1px solid;
-    /*margin: 0px 10px;*/
-    padding: 0px 10px;
+    margin: 0px 3px;
+    padding: 0px 3px;
 }
 
 .ArticleInRow {
