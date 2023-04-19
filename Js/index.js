@@ -100,9 +100,13 @@ $(document).ready(function () {
         $("#map").css("left", altezza_headerwrapper.left);
         $("#mehr").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
         $("#mehr").css("left", altezza_headerwrapper.left);
+
+        fix();
+
     });
 
-    window.onscroll = function() {
+
+    window.onscroll = function(){
         let larg= $(window).width();
         scrollFunction();
         if(larg > 1080) {
@@ -235,5 +239,16 @@ function mehr(){
         $("#DropDownMehr").css("transform", "rotate(360deg)");
         $("#hamburger").attr("src", "img/menu_close.png");
         display_mehr = 0;
+    }
+}
+function fix(){
+    let i=0;
+    while(i<2){
+        setTimeout(function(){
+            let altezza_headerwrapper = $(".HeaderWrapper").height();
+            let position_headerwrapper = $(".HeaderWrapper").position();
+            $("#mehr").css("top", position_headerwrapper.top + altezza_headerwrapper + 40);
+        }, 200);
+        i++;
     }
 }
