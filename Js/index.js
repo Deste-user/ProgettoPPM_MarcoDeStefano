@@ -44,6 +44,7 @@ $(document).ready(function () {
         let altezza_img = $("#ImgCamp").height();
         if(larghezza_schermo <= 1080){
             if(display_mehr == 1){
+                $("#Buttontop").css("display", "none");
                 $(".ADV2").css("display", "none");
                 $("#mehr").css("top","70px!important");
                 $(".MainContainer").css("display", "none");
@@ -52,6 +53,7 @@ $(document).ready(function () {
                 $(".BottomMap").css("display", "none");
                 $(".BottomMehr").css("display", "none");
             }else{
+                $("#Buttontop").css("display", "flex");
                 $(".MainContainer").css("display", "flex");
                 $(".ADV2").css("display", "flex");
                 $(".Footer").css("display", "flex");
@@ -142,13 +144,14 @@ $(document).ready(function () {
 });
 var display_mehr = 0;
 function scrollFunction() {
+    larghezza_schermo = $(window).width();
     let mybutton = $("#Buttontop");
     if ($(window).scrollTop()) {
         if(display_mehr == 0 || larghezza_schermo > 1080){
-        mybutton.css("display", "block")
+        mybutton.css("display", "flex");
         }
     } else{
-        mybutton.css("display", "none")
+        mybutton.css("display", "none");
     }
 }
 function topFunction() {
@@ -229,13 +232,13 @@ function mehr(){
     }else{
         $(".ADV2").css("display", "flex");
         $("#mehr").css("display", "none");
-        //PROVA INIZIA DA QUI
+
         $(".MainContainer").css("display", "flex");
         $(".Footer").css("display", "flex");
         $(".LastPart").css("display", "flex");
         $(".BottomMap").css("display", "flex");
         $(".BottomMehr").css("display", "flex");
-        //PROVA FINISCE QUA
+
         $("#DropDownMehr").css("transform", "rotate(360deg)");
         $("#hamburger").attr("src", "img/menu_close.png");
         display_mehr = 0;
