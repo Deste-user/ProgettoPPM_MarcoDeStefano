@@ -20,6 +20,11 @@
         <div class="MainWrapper">
             <div class="HeaderWrapper" id="nav">
 
+                <div class="Research">
+                    <div style="margin-top: 10px; margin-left: 20px;margin-right: 20px; cursor: pointer;" ><img src="img/cross.png" height="50" onclick="CloseSearch()" > </div>
+                    <input type="text" placeholder="Suche..." class="SearchInput" style="width: 100%; height: 70px; font-size: 1em">
+                </div>
+
                 <div class="SignMenu">
                     <img id="hamburger" src="img/menu_close.png" height="32" style="cursor: pointer;" onclick="mehr()">
                 </div>
@@ -39,7 +44,7 @@
                 </div>
 
                 <div class="RowHeaderMedia">
-                    <div style="margin-right: 25px"><img src="img/SearchIcon.png" height="32"></div>
+                    <div style="margin-right: 25px; cursor:pointer;" onclick="Search()"><img src="img/SearchIcon.png" height="32"></div>
                     <div><img src="img/icons8-orologio%20(1).svg" height="32"></div>
                     <div class="FakeLogo" style="width: 32px; height: 32px; font-size: 25px;"><span>S</span></div>
                 </div>
@@ -418,6 +423,66 @@
                             </div>
                         </div>
                     </div>
+
+                </div>
+                <div style="width: 100%; height:20px"> &nbsp; </div>
+                <div class="ListArticle1">
+
+                    <div class="ArticleOfList">
+                        <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                        <div class="Article">
+                            <div>
+                                <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                            </div>
+                            <div class="TitleArticle">
+                                <div class="FakeLogo"><span>S</span></div>
+                                <span >&nbsp; Titolo Articolo</span>
+                            </div>
+                            <div class="MiniArticle">
+                                <p>
+                                    Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ArticleOfList Border">
+                        <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                        <div class="Article">
+                            <div>
+                                <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                            </div>
+                            <div class="TitleArticle">
+                                <div class="FakeLogo"><span>S</span></div>
+                                <span>&nbsp;Titolo Articolo</span>
+                            </div>
+
+                            <div class="MiniArticle">
+                                <p>
+                                    Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ArticleOfList">
+                        <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                        <div class="Article">
+                            <div>
+                                <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                            </div>
+                            <div class="TitleArticle">
+                                <div class="FakeLogo"><span>S</span></div>
+                                <span>&nbsp;Titolo Articolo</span>
+                            </div>
+                            <div class="MiniArticle">
+                                <p>
+                                    Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div style="width: 100%">&nbsp;</div>
 
@@ -466,8 +531,304 @@
                         <div class="LineDivision " style="margin-top: 5px; margin-bottom: 5px;"></div>
                     </div>
                     <div class="ADV3" > <span>ADV3</span></div>
-
                 </div>
+
+                <div id="ArticlesNumber" >
+                    <div class="NearArticle">
+                        <div class="ADV3" id="ADV5" style="height: 200px;width: 200px;"><span>ADV5</span></div>
+                        <div> &nbsp; </div>
+
+                        <div class="ArticleOfList">
+                            <div class=" ImageContainer SecondRowImage SecondRowImage1" style="background-image: url('https://via.placeholder.com/600x400/4c5cd9/969696?text=LoremIpsum'); width: 97%;"></div>
+                            <div class="Article">
+                                <div>
+                                    <span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto Genere Articolo</span>
+                                </div>
+                                <div class="TitleArticle">
+                                    <div class="FakeLogo"><span>S</span></div>
+                                    <span>&nbsp;Titolo Articolo</span>
+                                </div>
+                                <div class="MiniArticle" style="display: flex">
+                                    <p>
+                                        Dies ist ein Beispiel für Text, der in den Container geschrieben werden kann. Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel, Es ist nur ein Beispiel.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="MostArticlesRead">
+                        <div class="CliccatoDiPiù">
+                            <span>Meistgeklickt</span>
+                        </div>
+                        <div class="Sector">
+
+                            <div class="MiniSector" id="Division1" onclick="ChangePage1()">
+                                <div class="FakeLogo"><span>S</span></div> &nbsp; <span>Themen</span>
+                            </div>
+
+                            <div class="MiniSector" id="Division2" onclick="ChangePage2()">
+                                <svg width="1em" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" class="Icon__Svg-sc-bzu76k-1 hwYosZ">
+                                    <rect x="0" y="0" width="24" height="24" fill-opacity="0" fill-rule="nonzero"></rect>
+                                    <path d="M21.331,0l-18.665,0c-1.461,0.004 -2.662,1.205 -2.666,2.666l0,18.67c0.004,1.461 1.205,2.662 2.666,2.666l18.67,0c1.461,-0.004 2.662,-1.205 2.666,-2.666l0,-18.67c-0.004,-1.462 -1.208,-2.664 -2.671,-2.666Zm-6.666,18.669l-9.335,0l-0,-2.671l9.335,0l-0,2.671Zm4.004,-5.337l-13.336,0l-0,-2.666l13.336,-0l0,2.666Zm0,-5.333l-13.336,0l-0,-2.666l13.336,-0l0,2.666Z" fill-rule="nonzero"></path>
+                                </svg>
+                                &nbsp;
+                                <span>Artikel</span>
+                            </div>
+
+                            <div class="MiniSector" id="Division3" onclick="ChangePage3()">
+                                <svg width="1em" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" class="Icon__Svg-sc-bzu76k-1 hwYosZ">
+                                    <g transform="matrix(1.26057,0,0,1.26057,0,0)">
+                                        <rect x="0" y="0" width="19.039" height="19.039" fill-opacity="0" fill-rule="nonzero"></rect>
+                                    </g>
+                                    <g transform="matrix(1.51241,0,0,1.51241,-3.02231,-3.02218)">
+                                        <path d="M3.587,5.173L2,5.173L2,16.279C2.002,17.149 2.717,17.864 3.587,17.866L14.693,17.866L14.693,16.279L3.587,16.279L3.587,5.173ZM16.279,2L6.76,2C5.89,2.002 5.175,2.717 5.173,3.587L5.173,13.107C5.176,13.976 5.891,14.691 6.76,14.693L16.28,14.693C17.15,14.691 17.865,13.976 17.867,13.106L17.867,3.587C17.865,2.717 17.149,2.002 16.279,2ZM9.933,11.916L9.933,4.777L14.693,8.347L9.933,11.916Z" fill-rule="nonzero"></path>
+                                    </g>
+                                </svg>
+                                &nbsp;
+                                <span>Videos</span>
+
+                            </div>
+                        </div>
+                        <div id="Primo"> <div class="ClassificaArticoli" >
+                            <div class="Posto">
+                             <div class="NPosto"><span>1</span></div>
+                             <div class="TitoloArticoloInClassifica">
+                                 <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                            <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                            <span style="font-weight: bold; font-size: 20px ">Themen</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                             </div>
+                            </div>
+
+
+                            <div class="Posto">
+                                <div class="NPosto"><span>2</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Themen</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>3</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Themen</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>4</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Themen</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>5</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Themen</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+                        <div id="Secondo"> <div class="ClassificaArticoli" >
+                            <div class="Posto">
+                                <div class="NPosto"><span>1</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Articolo</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="Posto">
+                                <div class="NPosto"><span>2</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Articolo</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>3</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Articolo</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>4</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Articolo</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>5</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Articolo</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+                        <div id="Terzo"><div class="ClassificaArticoli" >
+                            <div class="Posto">
+                                <div class="NPosto"><span>1</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Video</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="Posto">
+                                <div class="NPosto"><span>2</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Video</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>3</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Video</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>4</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Video</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Posto">
+                                <div class="NPosto"><span>5</span></div>
+                                <div class="TitoloArticoloInClassifica">
+                                    <div ><span style="color: red;font-size: 15px;"> Genere Articolo  » </span> <span style="color:gray;font-size: 15px;"> Oggetto  Articolo</span></div>
+                                    <div style="flex-direction: row;display: flex;">
+                                        <div class="FakeLogo"><span>S</span></div>&nbsp;
+                                        <span style="font-weight: bold; font-size: 20px ">Titolo Video</span>
+                                    </div>
+                                    <div class="Views">
+                                        <svg viewBox="0 0 24 24" width="1em" class="Icon__Svg-sc-bzu76k-1 hwYosZ"><path d="M5.3 6.6A11.6 11.6 0 0112 4.5 11.8 11.8 0 0123 12a11.6 11.6 0 01-4.3 5.4 11.6 11.6 0 01-6.7 2.1 11.6 11.6 0 01-6.7-2A11.6 11.6 0 011 12a11.6 11.6 0 014.3-5.4zm3.2 9a5 5 0 007 0 5 5 0 000-7.1 5 5 0 00-7 0 5 5 0 000 7zm1.4-5.7a3 3 0 014.2 0 3 3 0 010 4.2 3 3 0 01-4.2 0 3 3 0 010-4.2z"></path></svg>
+                                        &nbsp;&nbsp;
+                                        <span> number of views</span>&nbsp; <span>Aufrufe</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+                     </div>
+                    </div>
             </div>
 
             <div class="BottomMap">

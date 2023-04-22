@@ -460,7 +460,6 @@ span{
 }
 .evid{
     color: grey;
-
 }
 .evid:hover{
     color: red;
@@ -515,6 +514,118 @@ span{
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+#ArticlesNumber{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:10px;
+    gap: 30px;
+    width: 100%;
+}
+.NearArticle{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.MostArticlesRead{
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CliccatoDiPiù{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(102, 101, 101);
+    background-color: rgb(238, 238, 238);
+}
+.Sector{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.MiniSector{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding:20px 20px 20px 20px ;
+    width: 33%;
+    color:rgb(102, 101, 101);
+    font-size: 16px;
+    border-bottom:rgb(102, 101, 101)  2px solid;
+    transition: 0.3s;
+}
+.ClassificaArticoli{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    background-color: rgb(238, 238, 238);
+}
+.NPosto{
+    font-size: 46px;
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+    color:rgb(102, 101, 101);
+    width: 10%;
+}
+.Posto{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding:20px;
+}
+
+.TitoloArticoloInClassifica{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 2px;
+    width: 90%;
+}
+
+.TitoloArticoloInClassifica:hover{
+    color: grey;
+    transition: 0.5s;
+}
+
+.Views{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    color:#00000080;
+}
+
+#Primo{
+    display: flex;
+}
+
+#Secondo{
+    display: none;
+}
+
+#Terzo{
+    display: none;
+}
+#Division1{
+    border-bottom: red 3px solid;
+    color:red
+}
+.Research{
+    display: none;
+}
+
+
+
 
 /*------------------------MEDIA QUERY------------------------*/
 @media screen and (max-width: 1400px){
@@ -572,6 +683,27 @@ span{
 
 
 @media screen and (max-width: 1080px) {
+
+    .Research{
+        flex-direction: row;
+        width: 100%!important;
+        justify-content: space-between;
+        font-size:2em;
+        display: none;
+    }
+    #ArticlesNumber{
+        flex-direction: column!important;
+    }
+    .MostArticlesRead{
+        width: 100%!important;
+    }
+    .NearArticle{
+        width: 100%!important;
+        justify-content: center;
+    }
+    #ADV5{
+        display: none!important;
+    }
 
     #map{
         display: none!important;
