@@ -632,19 +632,6 @@ span{
 .Research{
     display: none;
 }
-@media screen and (max-width: 1400px) and (min-width: 1080px){
-    .PrincipalBlock{
-        display: none;
-    }
-
-    .SecondPrincipalBlock{
-        display: flex;
-        flex-direction: column;
-        width: 100%!important;
-    }
-
-}
-
 
 
 

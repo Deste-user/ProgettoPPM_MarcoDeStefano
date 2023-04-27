@@ -25,12 +25,6 @@ $(document).ready(function () {
         $(".colimage").css("height", altezza_img);
     }
 
-    /*var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
-    if(isSafari && larghezza_schermo>1080){
-        $(".SecondRowImage").css("height", 186);
-        $(".AAA").css("height", 373);
-        $(".colimage").css("height", altezza_img);
-    }*/
 
 
     let larghezza_img = $(".SecondRowImage").width();
@@ -49,6 +43,7 @@ $(document).ready(function () {
         $(".SearchInput").focusout(function (){
             $(".InputSearchFiles").css("border-bottom", "2px solid grey");
         });
+
         let altezza_img = $("#ImgCamp").height();
 
         if(larghezza_schermo > 1080 && larghezza_schermo<=1400){
