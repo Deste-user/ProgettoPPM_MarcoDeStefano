@@ -1046,6 +1046,7 @@ span{
     padding: 0 5px;
 }
 
+
 .ListaVociMehr span{
     padding: 5px 0;
 }
@@ -1082,5 +1083,48 @@ span{
 
 .sottoMenu:hover{
     background-color: #dadada;
+}
+
+
+.SecondPrincipalBlock{
+    display: none;
+}
+
+/* GRID */
+
+@media screen and (min-width: 700px) and (max-width: 1080px){
+.PrincipalBlock{
+    display: none;
+}
+.SecondPrincipalBlock{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.items2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.item3{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.item4{
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
 }
 
